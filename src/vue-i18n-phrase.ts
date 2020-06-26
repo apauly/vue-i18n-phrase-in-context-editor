@@ -45,7 +45,7 @@ export default class VueI18nPhrase {
             }
 
             this.previousVueI18nFormatter = this.vueI18n.formatter;
-            this.vueI18n.formatter = new VueI18nPhraseFormatter({
+            this.vueI18n.formatter = this.config.formatter || new VueI18nPhraseFormatter({
                 prefix: this.config.prefix,
                 suffix: this.config.suffix,
             });

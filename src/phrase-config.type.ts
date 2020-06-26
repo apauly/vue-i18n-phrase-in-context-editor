@@ -18,6 +18,7 @@ export type PhraseConfig = {
     autoLowercase: boolean;
     forceLocale: boolean;
     loginDialogMessage: string;
+    formatter: unknown;
     autoLogin: {
         perform: boolean;
         email: string;
